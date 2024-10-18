@@ -1,0 +1,113 @@
+@media only screen and (min-width:600px) {
+    /* body {
+        background-color: red;
+    }
+ */
+
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width:768px) {
+    body {background: blue;}
+
+    /* nav section here  */
+    #menu-icon {
+        display: none;
+    }
+
+    .hidden {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul { 
+        position: absolute;
+        top: 1.6rem;
+        right: .1rem;
+    }
+
+    nav li{
+        display: inline;
+        margin: 1rem 0;
+    }
+
+    .nav-link{
+        font-size: 1.3rem;
+    }
+
+    /* nav section end here  */
+
+    #Home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px;
+    gap: 60px;
+    }
+    .home-content{
+    order: 0;
+    }
+    .hom-img{
+    order: 1;
+    }
+    .about-content p{
+        text-align: center;
+    }
+
+    /* skill section start */
+    /* .skill-container{
+        
+        transition: .3s;
+    } */
+    .technical-skill , .professional-skill{
+        padding: 3.4rem;
+        transition: .3s;
+    }
+     /* contact sention start  */
+     .contact form .input-box{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .contact form .input-box input{
+        width: auto;
+      }
+      .contact form .input-box input,textarea{
+        margin: 1rem ;
+        width: auto;
+      }
+      footer{
+        display: flex;
+        justify-content: space-between;
+      }
+      
+
+} 
+   
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        background: orange;
+    }
+    .about-p{
+        width: 60%;
+        margin: 0 auto;
+    }
+    /* skill section start */
+    .skill-container{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .contact form .input-box input{
+        margin: 1rem ;
+        width: 20%;
+      }
+      .services-container .services-box{
+        flex:1 1 30rem ;
+      }
+
+   
+}
