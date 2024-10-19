@@ -3,13 +3,27 @@
         background-color: red;
     }
  */
+ .fixed {
+    width: 75%;
+    margin: 0 auto;
+    padding-left: 5%;
+}
+.contact form .input-box{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.contact form .input-box input{
+    width: 85%;
+    margin: 1rem 0;
+}
+.contact form textarea{
+    width: 65%;
+}
 
 
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width:768px) {
-    body {background: blue;}
-
     /* nav section here  */
     #menu-icon {
         display: none;
@@ -57,34 +71,44 @@
     }
 
     /* skill section start */
-    /* .skill-container{
-        
-        transition: .3s;
-    } */
     .technical-skill , .professional-skill{
         padding: 3.4rem;
         transition: .3s;
     }
+
+
+
+/* service section start here  */
+
+    .cards {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    /* service section end here  */
+
+
      /* contact sention start  */
-     .contact form .input-box{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-      .contact form .input-box input{
-        width: auto;
-      }
-      .contact form .input-box input,textarea{
-        margin: 1rem ;
-        width: auto;
-      }
-      footer{
-        display: flex;
-        justify-content: space-between;
-      }
-      
+    
+        
+      /* footer section start  */
+  
+    .footer-icon{
+        float: right;
+    }
+    .foot{
+        float: left;
+        padding: 2rem;
+    }
+    .footer-sec::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
 
 } 
+
+
    
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -101,13 +125,35 @@
         justify-content: space-between;
         
     }
-    .contact form .input-box input{
-        margin: 1rem ;
-        width: 20%;
-      }
-      .services-container .services-box{
+    .services-container .services-box{
         flex:1 1 30rem ;
-      }
+    }
+    /* contact section start  */
+    .fixed {
+        width: 65%;
+        margin: 0 auto;
+        /* padding-left: 7%; */
+    }
+    .contact form .input-box input{
+        width: 82%;
+        margin: 1rem 0;
+    }
+    .contact form textarea{
+        width: 55%;
+    }
+
+    /* service section start here  */
+
+    .cards {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    /* service section end here  */
+    
+
+    /* footer section start  */
+   
 
    
 }
